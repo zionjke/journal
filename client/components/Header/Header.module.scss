@@ -1,8 +1,12 @@
 .root {
+  position: fixed;
   display: flex;
+  margin-bottom: 15px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  width: 100%;
+  z-index: 1;
+  padding: 0 35px 0 10px;
   height: 60px;
   background-color: #fff4e2 !important;
 }
@@ -10,13 +14,26 @@
 
 .penButton {
   min-width: 40px !important;
-  width: 40px;
-  height: 40px;
+  text-transform: inherit !important;
+  font-size: 16px !important;
+  letter-spacing: 0 !important;
+
+  svg {
+    margin-left: 10px;
+  }
+
+}
+
+.avatar {
+  margin-left: 15px;
+  border-radius: 20% !important;
+  margin-right: 7px;
 }
 
 .searchBlock {
   position: relative;
   margin-right: 15px;
+  width: 310px;
 
   svg {
     position: absolute;
@@ -26,7 +43,7 @@
   }
 
   input {
-    width: 240px;
+    width: 100%;
     height: 40px;
     background-color: rgb(0, 0, 0, 0.05);
     font-size: 16px;

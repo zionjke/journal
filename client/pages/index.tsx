@@ -2,6 +2,7 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import {Header} from "../components/Header";
 import {Post} from "../components/Post";
+import {Menu} from "../components/Menu"
 
 
 const Home: NextPage = () => {
@@ -13,12 +14,20 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
-            <div>
-                <div className={"leftSide"}></div>
+            <div className="wrapper">
+                <div className={"leftSide"}>
+                    <Menu/>
+                </div>
                 <div className={"content"}>
                     <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
                 </div>
-                <div className={"rightSide"}></div>
+                <div className={"rightSide"}>
+
+                </div>
             </div>
         </div>
     )
